@@ -271,6 +271,7 @@ html {
   left: 50%;
   margin-left: -250.5px;
   top: 254px;
+  background: url(../img/w2-img.png);
 }
 .p1 .p1-w2 .tab-item .tab-txt li {
   position: relative;
@@ -303,20 +304,20 @@ html {
   margin-left: -147px;
   top: 35px;
 }
-.p1 .p1-w2 .tab-item .w2-img {
-  width: 100%;
-}
 .p1 .p1-w2 .tab-item .tab-img {
-  width: 501px;
-  height: 791px;
+  width: 497px;
+  height: 787px;
   position: absolute;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 .p1 .p1-w2 .tab-item .tab-img img {
-  top: 50%;
+  pointer-events: auto;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
+  z-index: 99;
 }
 .p1 .p1-w2 .tab-item .w2-camera {
   width: 50px;
@@ -360,6 +361,7 @@ html {
   left: 50%;
   margin-left: -250.5px;
   top: 254px;
+  background: url(../img/w2-img.png);
 }
 .p1 .p1-w3 .tab-item .tab-txt li {
   position: relative;
@@ -392,24 +394,22 @@ html {
   margin-left: -147px;
   top: 35px;
 }
-.p1 .p1-w3 .tab-item .w2-img {
-  width: 100%;
-}
 .p1 .p1-w3 .tab-item .w2-camera {
   left: 50%;
   margin-left: -25px;
   bottom: -25px;
 }
 .p1 .p1-w3 .tab-img {
-  width: 501px;
-  height: 791px;
+  width: 497px;
+  height: 787px;
   position: absolute;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 .p1 .p1-w3 .tab-img img {
-  top: 50%;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 .p1 .p1-w3 .w2-camera {

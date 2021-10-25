@@ -1,0 +1,32 @@
+.animate__fadeInDownBig {
+    animation: fadeInDownBig 5s ease forwards;
+}
+.animate__heartBeat{
+    animation: heartBeat 3s linear infinite;
+}
+.animate__bounceIn {
+    animation: bounceIn 2s linear forwards;
+}
+.animate__slideInDown{
+    animation: slideInDown 2s linear forwards;
+}
+.animate__zoomIn {
+    animation: zoomIn .5s linear forwards;
+}
+.animate__bounceInUp{
+    animation: bounceInUp 1s ease forwards;
+}
+.index-ball,
+.index-air {
+    animation: Ball 1s linear infinite alternate;
+}
+
+@keyframes Ball {
+    0% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
