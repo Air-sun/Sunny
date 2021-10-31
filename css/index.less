@@ -308,6 +308,9 @@ html {
                 li {
                     position: relative;
                     display: none;
+                    img{
+                        z-index: 99;
+                    }
                 }
 
                 .active {
@@ -351,9 +354,7 @@ html {
             .tab-img {
                 width: 497px;
                 height: 787px;
-                position: absolute;
-                top: 0;
-                left: 0;
+                .centerLevel(497, 2);
                 overflow: hidden;
                 img {
                     pointer-events: auto;
@@ -411,77 +412,11 @@ html {
             height: 791px;
             .centerLevel(501, 254);
             background: url(../img/w2-img.png);
-
-            .tab-txt {
-                li {
-                    position: relative;
-                    display: none;
-                }
-
-                .active {
-                    display: block;
-                }
-            }
-
-            .tab-txt li:nth-of-type(1) {
-                img {
-                    left: 312px;
-                    top: 45px;
-                }
-            }
-
-            .tab-txt li:nth-of-type(2) {
-                img {
-                    left: 33px;
-                    top: 33px;
-                }
-            }
-
-            .tab-txt li:nth-of-type(3) {
-                img {
-                    .centerLevel(470, 20);
-                }
-            }
-
-            .tab-txt li:nth-of-type(4) {
-                img {
-                    left: 0px;
-                    top: 580px;
-                }
-            }
-
-            .tab-txt li:nth-of-type(5) {
-                img {
-                    .centerLevel(294, 35);
-                }
-            }
-
-            .w2-camera {
-                left: 50%;
-                margin-left: -25px;
-                bottom: -25px;
-            }
-        }
-
-        .tab-img {
-            width: 497px;
-            height: 787px;
-            position: absolute;
-            top: 0;
-            left: 0;
             overflow: hidden;
-
-            img {
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
+            img{
+                width: 100%;
             }
         }
-
-        .w2-camera {
-            display: none;
-        }
-
         .w3-btn {
             width: 600px;
             height: 146px;
