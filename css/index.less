@@ -501,21 +501,180 @@ html {
         }
     }
 }
+// P2页
+.p2{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #b1e4e3;
+    overflow: hidden;
+    .p2-return{
+        top: 30px;
+        right: 25px;
+        z-index: 9;
 
+    }
+    .p2-w1,
+    .p2-w2{
+        width: 100%;
+        height: 1333px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .p2-w1{
+      
+        .p2-star{
+            top: 130px;
+            left: 70px;
+        }
+        .p2-sign{
+            top: 30px;
+            left: 360px;
+        }
+        .p2-slik{
+            right: 0;
+            top: 0px;
+        }
+        .p2-model{
+            top: 36px;
+            left: 100px;
+        }
+        .tag{
+            width: 700px;
+            .centerLevel(700, 490);
+            >div{
+                width: 340px;
+                height: 240px;
+                position: absolute;
+                img:last-of-type{
+                    display: none;
+                }
+            }
+            .tag1,.tag3{
+                top: 110px;
+                left: 0;
+            }
+            .tag3{
+                top: 350px;
+            }
+            .tag2,.tag4{
+                right: 0;
+            }
+            .tag4{
+                top: 260px;
+            }
+        }
+        .p2-txt{
+            .centerLevel(191, 1100);
+        }
+        .p2-sure{
+            width: 230px;
+            height: 147px;
+            .centerLevel(230, 1164);
+            img{
+                right: 0;
+            }
+        }
+    }
+    .p2-w2{
+      .p2-w2-star{
+          height: 30px;
+          left: 50px;
+      }
+      .p2-img{
+          width: 592px;
+          height: 856px;
+        .centerLevel(592, 160);
+      }
+      .p2-share{
+          width: 560px;
+          height: 141px;
+        .centerLevel(560, 1050);
+        .pay{
+            width: 100%;
+            height: 57px;
+            position: absolute;
+        }
+        .find{
+            width: 100%;
+            height: 57px;
+            position: absolute;
+            bottom: 0;
+        }
+      }
+
+    }
+    .p2-w2-layer{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .4);
+        .p2-w2-layer-box{
+            width: 497px;
+            height: 313px;
+            .centerLevel(497, 0);
+            top: 50%;
+            margin-top: -157px; 
+            >img{
+                width: 100%;
+            }
+            .close{
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                right: 5px;
+                top: 10px;
+            }
+        }
+    }
+    .p2-layer{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .4);
+        .p2-layer-box{
+            width: 497px;
+            height: 313px;
+            .centerLevel(497, 0);
+            top: 50%;
+            margin-top: -157px; 
+            >img{
+                width: 100%;
+            }
+            .p2-layer-btn{
+                width: 130px;
+                height: 42px;
+                .centerLevel(130, 290);
+                >img{
+                    width: 100%;
+                }
+            }
+            .close{
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                right: 5px;
+                top: 10px;
+            }
+        }
+       
+    }
+}
+// 适配
 @media screen and (max-height:1206px) {
+   
     .p1 {
-        .p1-w1,
-        .p1-w2,
-        .p1-w3,
-        .p1-w4 {
+        .w{
             width: 100%;
             height: 1333px;
             position: absolute;
             left: 0;
             top: 50%;
-            margin-top: -1280/2px;
+            margin-top: -1333/2px;
         }
-
         .p1-layer {
             position: absolute;
             width: 100%;
@@ -543,6 +702,14 @@ html {
             transform: scaleY(.95);
         }
     }
+    .p2{
+        .w{
+            width: 100%;
+            height: 1333px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -1333/2px;
+        }
+    }
 }
-
-// P2页

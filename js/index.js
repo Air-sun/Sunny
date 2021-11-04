@@ -1,7 +1,8 @@
 $(function () {
     // 点击第一部分进入p1页
     $('.home-box1').click(function () {
-        $('.home').fadeOut().next().fadeIn();
+        $('.home').fadeOut();
+        $('.p1').fadeIn();
         $('.p1-layer').fadeIn(1000);
     })
     //点击关闭弹层
@@ -57,7 +58,7 @@ $(function () {
         //合成图片的js代码
         html2canvas(document.querySelector('.tab-item'), {
             useCORS: true,
-            //使用看到的宽高作为图片的宽高
+            //图片的宽高
             width: 501,
             height: 791
         }).then(canvas => {
@@ -95,6 +96,10 @@ $(function () {
             })
         })
     })
-
-
+    // 点击第二部分进入p2页
+    $('.home-box2').click(function () {
+        $('.home').fadeOut();
+        $('.p2').fadeIn();
+        $('.p1-layer').fadeIn(1000);
+    })
 })
