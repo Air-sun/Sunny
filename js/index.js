@@ -56,7 +56,7 @@ $(function () {
         }
         $('.p1-w2 .tab-item .w2-camera').hide();
         //合成图片的js代码
-        html2canvas(document.querySelector('.tab-item'), {
+        html2canvas(document.querySelector('.p1-w2 .tab-item'), {
             useCORS: true,
             //图片的宽高
             width: 501,
