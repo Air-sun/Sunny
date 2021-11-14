@@ -458,9 +458,11 @@ html {
   overflow: hidden;
 }
 .p2 .p2-return {
+  position: absolute;
+  width: 93px;
+  height: 78px;
   top: 30px;
   right: 25px;
-  z-index: 9;
 }
 .p2 .p2-w1,
 .p2 .p2-w2 {
@@ -498,8 +500,11 @@ html {
   height: 240px;
   position: absolute;
 }
-.p2 .p2-w1 .tag > div img:last-of-type {
+.p2 .p2-w1 .tag > div img {
   display: none;
+}
+.p2 .p2-w1 .tag > div .active {
+  display: block;
 }
 .p2 .p2-w1 .tag .tag1,
 .p2 .p2-w1 .tag .tag3 {
@@ -545,6 +550,9 @@ html {
   margin-left: -296px;
   top: 160px;
 }
+.p2 .p2-w2 .p2-img li {
+  display: none;
+}
 .p2 .p2-w2 .p2-share {
   width: 560px;
   height: 141px;
@@ -563,6 +571,122 @@ html {
   height: 57px;
   position: absolute;
   bottom: 0;
+}
+.p2 .p2-w3 .p2-w3-star {
+  top: 273px;
+  left: 106px;
+}
+.p2 .p2-w3 .w3-searchBox {
+  width: 558px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 25px;
+  border: 3px solid #002d72;
+  box-sizing: border-box;
+  background-color: #b1e4e3;
+  position: absolute;
+  left: 50%;
+  margin-left: -279px;
+  top: 86px;
+}
+.p2 .p2-w3 .w3-searchBox input::-webkit-input-placeholder {
+  /*WebKit browsers*/
+  color: #002d72;
+}
+.p2 .p2-w3 .w3-searchBox input {
+  width: 462px;
+  overflow: hidden;
+  left: 30px;
+  position: absolute;
+  font-weight: 800;
+  color: #002d72;
+  font-size: 25px;
+  box-sizing: border-box;
+  text-align: center;
+  top: 8px;
+}
+.p2 .p2-w3 .w3-searchBox .w3-search {
+  right: 26px;
+  height: 100%;
+  width: 40px;
+  position: absolute;
+}
+.p2 .p2-w3 .w3-searchBox .w3-search img {
+  text-align: center;
+  top: 16px;
+  vertical-align: middle;
+}
+.p2 .p2-w3 .p2-w3-form {
+  position: absolute;
+  top: 176px;
+  left: 96px;
+  width: 558px;
+  display: flex;
+  justify-content: space-between;
+}
+.p2 .p2-w3 .p2-w3-form select {
+  width: 180px;
+  height: 63px;
+  font-size: 25px;
+  color: #002d72;
+  background-color: #b0e3e2;
+  border: 3px solid #002d72;
+  border-radius: 25px;
+  text-align: center;
+  font-weight: 800;
+  overflow: hidden;
+}
+.p2 .p2-w3 .p2-w3-form select option {
+  font-size: 12px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  display: inline-block;
+}
+.p2 .p2-w3 .conter-love {
+  position: absolute;
+  top: 140px;
+  left: 0;
+}
+.p2 .p2-w3 .conter-love .conter-txt1 {
+  top: 310px;
+  left: 287px;
+}
+.p2 .p2-w3 .conter-love .conter-txt2 {
+  top: 380px;
+  left: 240px;
+}
+.p2 .p2-w3 .conter-love2 {
+  top: 854px;
+  right: 183px;
+  opacity: 1;
+}
+.p2 .p2-w3 .conter-love1 {
+  top: 1030px;
+  right: 70px;
+  opacity: 1;
+}
+.p2 .p2-w3 #allmap {
+  font-family: "微软雅黑";
+  font-size: 20px !important;
+  font-weight: 800;
+  width: 470px;
+  height: 500px;
+  border: 4px solid #002d72;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  margin-left: -235px;
+  top: 470px;
+}
+.p2 .p2-w3 .p2-w3-btn {
+  width: 560px;
+  height: 57px;
+  position: absolute;
+  left: 50%;
+  margin-left: -280px;
+  top: 1286px;
 }
 .p2 .p2-w2-layer {
   position: absolute;

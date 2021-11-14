@@ -39,6 +39,7 @@ html {
     height: 3497px;
     top: 0;
     left: 0;
+
     .index-bg {
         width: 100%;
         top: 0;
@@ -123,6 +124,7 @@ html {
     top: 0;
     left: 0;
     overflow: hidden;
+
     .p1-bg {
         top: -400px;
     }
@@ -240,6 +242,7 @@ html {
         top: 50%;
         margin-top: -1433/2px;
         background: rgba(0, 0, 0, .6);
+
         .close {
             width: 42px;
             height: 42px;
@@ -308,7 +311,8 @@ html {
                 li {
                     position: relative;
                     display: none;
-                    img{
+
+                    img {
                         z-index: 99;
                     }
                 }
@@ -356,6 +360,7 @@ html {
                 height: 787px;
                 .centerLevel(497, 2);
                 overflow: hidden;
+
                 img {
                     pointer-events: auto;
                     left: 50%;
@@ -413,10 +418,12 @@ html {
             .centerLevel(501, 254);
             background: url(../img/w2-img.png);
             overflow: hidden;
-            img{
+
+            img {
                 width: 100%;
             }
         }
+
         .w3-btn {
             width: 600px;
             height: 146px;
@@ -501,8 +508,9 @@ html {
         }
     }
 }
+
 // P2页
-.p2{
+.p2 {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -510,118 +518,281 @@ html {
     left: 0;
     background-color: #b1e4e3;
     overflow: hidden;
-    .p2-return{
+
+    .p2-return {
+        position: absolute;
+        width: 93px;
+        height: 78px;
         top: 30px;
         right: 25px;
-        z-index: 9;
-
     }
+
     .p2-w1,
-    .p2-w2{
+    .p2-w2 {
         width: 100%;
         height: 1333px;
         position: absolute;
         left: 0;
         top: 0;
     }
-    .p2-w1{
-      
-        .p2-star{
+
+    .p2-w1 {
+
+        .p2-star {
             top: 130px;
             left: 70px;
         }
-        .p2-sign{
+
+        .p2-sign {
             top: 30px;
             left: 360px;
         }
-        .p2-slik{
+
+        .p2-slik {
             right: 0;
             top: 0px;
         }
-        .p2-model{
+
+        .p2-model {
             top: 36px;
             left: 100px;
         }
-        .tag{
+
+        .tag {
             width: 700px;
             .centerLevel(700, 490);
-            >div{
+
+            >div {
                 width: 340px;
                 height: 240px;
                 position: absolute;
-                img:last-of-type{
+
+                img {
                     display: none;
                 }
+
+                .active {
+                    display: block;
+                }
             }
-            .tag1,.tag3{
+
+            .tag1,
+            .tag3 {
                 top: 110px;
                 left: 0;
             }
-            .tag3{
+
+            .tag3 {
                 top: 350px;
             }
-            .tag2,.tag4{
+
+            .tag2,
+            .tag4 {
                 right: 0;
             }
-            .tag4{
+
+            .tag4 {
                 top: 260px;
             }
         }
-        .p2-txt{
+
+        .p2-txt {
             .centerLevel(191, 1100);
         }
-        .p2-sure{
+
+        .p2-sure {
             width: 230px;
             height: 147px;
             .centerLevel(230, 1164);
-            img{
+
+            img {
                 right: 0;
             }
         }
     }
-    .p2-w2{
-      .p2-w2-star{
-          height: 30px;
-          left: 50px;
-      }
-      .p2-img{
-          width: 592px;
-          height: 856px;
-        .centerLevel(592, 160);
-      }
-      .p2-share{
-          width: 560px;
-          height: 141px;
-        .centerLevel(560, 1050);
-        .pay{
-            width: 100%;
-            height: 57px;
-            position: absolute;
+
+    .p2-w2 {
+        .p2-w2-star {
+            height: 30px;
+            left: 50px;
         }
-        .find{
-            width: 100%;
-            height: 57px;
-            position: absolute;
-            bottom: 0;
+
+        .p2-img {
+            width: 592px;
+            height: 856px;
+            .centerLevel(592, 160);
+
+            li {
+                display: none;
+            }
         }
-      }
+
+        .p2-share {
+            width: 560px;
+            height: 141px;
+            .centerLevel(560, 1050);
+
+            .pay {
+                width: 100%;
+                height: 57px;
+                position: absolute;
+            }
+
+            .find {
+                width: 100%;
+                height: 57px;
+                position: absolute;
+                bottom: 0;
+            }
+        }
 
     }
-    .p2-w2-layer{
+
+    .p2-w3 {
+        .p2-w3-star{
+            top: 273px;
+            left: 106px;
+        }
+        .w3-searchBox {
+            width: 558px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            border-radius: 25px;
+            border: 3px solid #002d72;
+            box-sizing: border-box;
+            background-color: #b1e4e3;
+            .centerLevel(558, 86);
+            input::-webkit-input-placeholder {
+                /*WebKit browsers*/
+                color: #002d72;
+
+            }
+            input {
+                width: 462px;
+                overflow: hidden;
+                left: 30px;
+                position: absolute;
+                font-weight: 800;
+                color: #002d72;
+                font-size: 25px;
+                box-sizing: border-box;
+                text-align: center;
+                top: 8px;
+                // white-space: nowrap;
+                // 是强制显示为一行： 
+                // text-overflow: ellipsis;
+                // 将文本溢出显示为（…）
+                // overflow: hidden;
+                // 不用多说，溢出隐藏。 
+            }
+            .w3-search {
+                right: 26px;
+                height: 100%;
+                width: 40px;
+                position: absolute;
+                img {
+                    text-align: center;
+                    top: 16px;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .p2-w3-form {
+            position: absolute;
+            top: 176px;
+            left: 96px;
+            width: 558px;
+            display: flex;
+            justify-content: space-between;
+
+            select{
+                width: 180px;
+                height: 63px;
+                font-size: 25px;
+                color: #002d72;
+                background-color: #b0e3e2;
+                border: 3px solid #002d72;
+                border-radius: 25px;
+                text-align: center;
+                font-weight: 800;
+                overflow: hidden;
+
+                option {
+                    font-size: 12px;
+                    width: 40px;
+                    height: 40px;
+                    overflow: hidden;
+                    display: inline-block;
+                }
+            }
+        }
+
+        // 心
+        .conter-love {
+            position: absolute;
+            top: 140px;
+            left: 0;
+            .conter-txt1 {
+                top: 310px;
+                left: 287px;
+            }
+            .conter-txt2 {
+                top: 380px;
+                left: 240px;
+            }
+        }
+
+        .conter-love2 {
+            top: 854px;
+            right: 183px;
+            opacity: 1;
+        }
+
+        .conter-love1 {
+            top: 1030px;
+            right: 70px;
+            opacity: 1;
+        }
+
+        // 百度地图
+        #allmap {
+            font-family: "微软雅黑";
+            font-size: 20px !important;
+            font-weight: 800;
+            width: 470px;
+            height: 500px;
+            border: 4px solid #002d72;
+            box-sizing: border-box;
+            .centerLevel(470, 470);
+        }
+
+        // 授权获取位置
+        .p2-w3-btn {
+            width: 560px;
+            height: 57px;
+            .centerLevel(560, 1286);
+        }
+    }
+
+    .p2-w2-layer {
         position: absolute;
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, .4);
-        .p2-w2-layer-box{
+        .p2-w2-layer-box {
             width: 497px;
             height: 313px;
             .centerLevel(497, 0);
             top: 50%;
-            margin-top: -157px; 
-            >img{
+            margin-top: -157px;
+
+            >img {
                 width: 100%;
             }
-            .close{
+
+            .close {
                 position: absolute;
                 width: 40px;
                 height: 40px;
@@ -630,29 +801,35 @@ html {
             }
         }
     }
-    .p2-layer{
+
+    .p2-layer {
         position: absolute;
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, .4);
-        .p2-layer-box{
+
+        .p2-layer-box {
             width: 497px;
             height: 313px;
             .centerLevel(497, 0);
             top: 50%;
-            margin-top: -157px; 
-            >img{
+            margin-top: -157px;
+
+            >img {
                 width: 100%;
             }
-            .p2-layer-btn{
+
+            .p2-layer-btn {
                 width: 130px;
                 height: 42px;
                 .centerLevel(130, 290);
-                >img{
+
+                >img {
                     width: 100%;
                 }
             }
-            .close{
+
+            .close {
                 position: absolute;
                 width: 40px;
                 height: 40px;
@@ -660,14 +837,15 @@ html {
                 top: 10px;
             }
         }
-       
+
     }
 }
+
 // 适配
 @media screen and (max-height:1206px) {
-   
+
     .p1 {
-        .w{
+        .w {
             width: 100%;
             height: 1333px;
             position: absolute;
@@ -675,12 +853,14 @@ html {
             top: 50%;
             margin-top: -1333/2px;
         }
+
         .p1-layer {
             position: absolute;
             width: 100%;
             height: 100%;
             top: 50%;
             margin-top: -1433/2px;
+
             .close {
                 width: 42px;
                 height: 42px;
@@ -702,8 +882,9 @@ html {
             transform: scaleY(.95);
         }
     }
-    .p2{
-        .w{
+
+    .p2 {
+        .w {
             width: 100%;
             height: 1333px;
             position: absolute;

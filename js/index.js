@@ -100,6 +100,98 @@ $(function () {
     $('.home-box2').click(function () {
         $('.home').fadeOut();
         $('.p2').fadeIn();
-        $('.p1-layer').fadeIn(1000);
+        $('.p2-layer').fadeIn(1000);
+    })
+    // 点击返回首页
+    $('.p2-w1 .p2-return').click(function () {
+        $('.home').fadeIn();
+        $('.p2').fadeOut();
+    })
+    //撕标签
+    $('.p2-w1 .tag>div').on('touchstart', function (e) {
+        var that = $(this).children('.active');
+        var startX = e.targetTouches[0].pageX;
+        $(document).on('touchmove', function (e) {
+            //获取滑动屏幕时的X,Y
+            var endX = e.originalEvent.changedTouches[0].pageX;
+            //获取滑动距离
+            var distanceX = endX - startX;
+            if (distanceX < 0 && that.index() > 0) {
+                that.fadeOut();
+                that.prev().addClass('active');
+            } else if (that.index() == 0) {
+                return;
+            }
+        })
+    })
+
+    // 点击返回p2-w1
+    $('.p2-w2 .p2-return').click(function () {
+        $('.p2-w1').fadeIn();
+        $('.p2-w2').fadeOut();
+    })
+    // 点击关闭弹层
+    $('.p2-layer .close,.p2-layer .p2-layer-btn').click(function () {
+        $('.p2-layer').fadeOut();
+    })
+    // 点击确定进入下一页,随机出现图片
+    $('.p2-w1 .p2-sure').click(function () {
+        $('.p2-w1').fadeOut();
+        $('.p2-w2').fadeIn();
+        var index = Math.floor(Math.random() * 6);
+        $('.p2-w2 .p2-img li').eq(index).show().siblings().hide();
+        $('.p2-w2-layer').fadeIn();
+       
+    })
+    // 点击关闭弹层
+    $('.p2-w2-layer .close').click(function () {
+        $('.p2-w2-layer').fadeOut();
+    })
+    // 点击显示弹层
+    $('.p2-share .pay').click(function () {
+        $('.p2-w2-layer').fadeIn();
+    })
+    // 点击进入下一页
+    $('.p2-share .find').click(function () {
+        $('.p2-w2').fadeOut();
+        $('.p2-w3').fadeIn();
+    })
+    // GL版命名空间为BMapGL
+    // 按住鼠标右键，修改倾斜角和角度
+    var map = new BMapGL.Map("allmap");    // 创建Map实例
+    map.centerAndZoom('邵阳市', 16); // 初始化地图,设置中心点坐标和地图级别
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+    map.setHeading(64.5);
+    map.setTilt(0);
+    var local = new BMapGL.LocalSearch(map, {
+        renderOptions: { map: map }
+    });
+    $('.w3-search').click(function () {
+        if ($('#province').val() == '省份') {
+            layer.msg('请选择省份 ', {
+                area: ["300px", '100px']
+            })
+            return false;
+        } else if ($('#city').val() == '城市') {
+            layer.msg('请选择市县', {
+                area: ["300px", '100px']
+            })
+            return false;
+        } else if ($('#town').val() == '地区') {
+            layer.msg('请选择地区', {
+                area: ["300px", '100px']
+            })
+            return false;
+        }
+        var site = $('#province').val() + $('#city').val() + $('#town').val() + $('#inp').val();
+        local.search(site);
+    })
+    //返回
+    $('.p2-w3 .p2-return').click(function(){
+        $('.p2-w3 ').fadeOut();
+        $('.p2-w2').fadeIn();
+        var index = Math.floor(Math.random() * 6);
+        $('.p2-w2 .p2-img li').eq(index).show().siblings().hide();
+        $('.p2-w2-layer').fadeIn();
     })
 })
